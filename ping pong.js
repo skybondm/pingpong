@@ -115,10 +115,12 @@ function colide_ball_end_paddle () {
     if (collision(ball, leftPaddle)) {
         ball.dx = -ball.dx
         ball.x = leftPaddle.x + leftPaddle.width
+        left_paddle.textContent = parseInt(left_paddle.textContent) + 1
     }
     else if (collision(ball, rightPaddle)) {
         ball.dx = -ball.dx
         ball.x = rightPaddle.x - ball.width
+        right_paddle.textContent = parseInt(right_paddle.textContent) + 1
     }
 }
 function ai () {
