@@ -98,6 +98,11 @@ function reset_game () {
             ball.x = karta.width / 2
             ball.y = karta.height / 2
         }, 2000)
+        if (ball.x < 0){
+            leftCounter.textContent = 0
+            else if (ball.x > karta.widht)
+            rightCounter.textContent = 0
+        }
     }
 }
 function collision (object1, object2) {
